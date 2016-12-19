@@ -74,8 +74,7 @@ int main ( int argc, char** argv ) {
             // Publish the message .
             pub.publish(msg);
          }
-      }
-      
+      }      
 
       // Wait until it's time for another iteration .
       rate.sleep();
@@ -110,7 +109,6 @@ void split(const std::string &s, char delim, std::vector<std::string> &elems) {
         elems.push_back(item);
     }
 }
-
 
 std::vector<std::string> split(const std::string &s, char delim) {
     std::vector<std::string> elems;
